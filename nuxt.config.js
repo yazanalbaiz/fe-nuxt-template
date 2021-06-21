@@ -1,6 +1,3 @@
-import colors from 'vuetify/es5/util/colors';
-import i18n from './plugins/i18n';
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
 
