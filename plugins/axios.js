@@ -1,11 +1,5 @@
 // 'use strict';
-export default function ({ $axios, }) {
-    $axios.onRequest(config => {
-    })
-  
-    $axios.onError(error => {
-    })
-  }
+
 // import Vue from 'vue';
 // import axios from 'axios';
 // import AxiosInterceptionService from '../services/axiosInterceptionService';
