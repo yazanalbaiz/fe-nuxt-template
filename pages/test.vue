@@ -65,6 +65,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
+          itemprop: 'image',
           content: this.$config.baseURL + MetaImage,
         },
         {
@@ -90,6 +91,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
+          itemprop: 'image',
           content: this.$config.baseURL + MetaImage,
         },
         {
