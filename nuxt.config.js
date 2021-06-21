@@ -7,7 +7,7 @@ export default {
     baseURL:
       process.env.NUXT_BASE_URL ||
       process.env.BASE_URL ||
-      'http://localhost:3000',
+      'https://sdaia-nuxt-template.herokuapp.com',
   },
   router: {
     middleware: ['guard'],
