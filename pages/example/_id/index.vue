@@ -21,6 +21,16 @@ export default {
   async asyncData({ params, store }) {
     try {
       const post = await store.dispatch('getPost', params.id);
+      store.dispatch('setCrumbs', [
+        {
+          title: 'Example Page',
+          path: '/example',
+        },
+        {
+          title: post.title,
+          path: '',
+        },
+      ]);
       return {
         post,
       };
@@ -74,7 +84,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions([]),
+    ...mapActions(['setCrumbs']),
     start() {
       this.loading = true;
     },
