@@ -37,6 +37,8 @@ export default {
     '~/plugins/axios.js',
     '~/plugins/axiosServices.js',
     '~/plugins/helpers.js',
+    '~/plugins/vue-breadcrumbs.js',
+    '~/plugins/logger.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

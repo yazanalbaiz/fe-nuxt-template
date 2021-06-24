@@ -1,0 +1,20 @@
+{
+	"Nuxt Logger": {
+		"prefix": [
+			"vlg"
+		],
+		"body": [
+			"this.$$log($1);"
+		],
+		"description": "Nuxt Logger"
+	},
+	"Default JS Console Logger": {
+		"prefix": [
+			"clg"
+		],
+		"body": [
+			"console.log($1);"
+		],
+		"description": "Default JS Console Logger"
+	}
+}

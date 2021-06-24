@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import globalization from './modules/globalization';
 import about from './modules/about';
+import names from './modules/names';
 
 Vue.use(Vuex);
 export default function () {
@@ -12,6 +13,7 @@ export default function () {
     modules: {
       globalization,
       about,
+      names,
     },
   });
 }

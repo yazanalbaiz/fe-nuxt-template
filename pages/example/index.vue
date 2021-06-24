@@ -6,7 +6,7 @@
     <v-col class="text-center">
       {{ getReactiveString('home') }}
       <br />
-      <NuxtLink v-for="(post, i) in posts" :key="i" :to="`dynamic/${post.id}`">
+      <NuxtLink v-for="(post, i) in posts" :key="i" :to="`/example/${post.id}`">
         {{ post.title }} <br />
       </NuxtLink>
     </v-col>
@@ -15,10 +15,10 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import MetaImage from '../assets/exampleImage.jpg';
+import MetaImage from '../../assets/exampleImage.jpg';
 
 export default {
-  name: 'Test',
+  name: 'index',
   components: {},
   data() {
     return {
@@ -28,7 +28,10 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(['getReactiveString']),
+    ...mapGetters({
+      getReactiveString: 'getReactiveString',
+      name: 'names/name',
+    }),
     ids() {
       return new Array(Math.floor(Math.random() * 10) + 1);
     },
@@ -108,7 +111,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions(['getPosts']),
+    ...mapActions({ getPosts: 'getPosts', getName: 'names/get' }),
     start() {
       this.loading = true;
     },
@@ -120,7 +123,8 @@ export default {
     this.getPosts().then((res) => {
       this.posts = res;
     });
-    console.log(this.$config);
+    this.getName();
+    this.$log('this is an example: ',this.$route,this.$router);
   },
 };
 </script>
