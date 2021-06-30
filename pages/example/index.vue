@@ -10,16 +10,20 @@
         {{ post.title }} <br />
       </NuxtLink>
     </v-col>
+    <v-col cols="12">
+      <Barchart/>
+    </v-col>
   </v-row>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
 import MetaImage from '../../assets/exampleImage.jpg';
+import Barchart from '@/components/charts/Barchart.vue';
 
 export default {
   name: 'index',
-  components: {},
+  components: {Barchart},
   data() {
     return {
       loading: false,

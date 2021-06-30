@@ -39,6 +39,7 @@ export default {
     '~/plugins/helpers.js',
     '~/plugins/vue-breadcrumbs.js',
     '~/plugins/logger.js',
+    { src: '~/plugins/apexCharts.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
