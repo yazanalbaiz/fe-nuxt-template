@@ -92,6 +92,19 @@ export default {
       this.loading = false;
     },
   },
-  mounted() {},
+  mounted() {
+    if(this.post) {
+      this.setCrumbs( [
+        {
+          title: 'Example Page',
+          path: '/example',
+        },
+        {
+          title: this.title,
+          path: '',
+        },
+      ]);
+    }
+  },
 };
 </script>
