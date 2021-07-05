@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-flex justify-center">
     <client-only>
       <ApexChart
         width="500"
@@ -20,16 +20,17 @@ export default {
         chart: {
           locales: [arabicApexChart],
           defaultLocale: 'ar',
-          id: 'vuechart-example',
+          id: 'vuechart-example', 
+          fontFamily: 'system-ui, Helvetica, Arial, sans-serif',
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
+          categories: ["اهلا", 1992, 1993, 1994, 1995, 1996, 1997, 1998],
         },
       },
       series: [
         {
           name: 'series-1',
-          data: [30, 40, 45, 50, 49, 60, 70, 91],
+          data: ["و سهلا", 45, 50, 49, 60, 70, 91],
         },
       ],
     };

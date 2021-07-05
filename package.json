@@ -13,6 +13,7 @@
     "@nuxtjs/vuetify": "^1.11.3",
     "apexcharts": "^3.27.1",
     "core-js": "^3.9.1",
+    "gsap": "file:gsap-bonus.tgz",
     "moment": "^2.29.1",
     "nuxt": "^2.15.3",
     "nuxt-i18n": "^6.27.0",
